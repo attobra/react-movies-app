@@ -1,9 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="container">
-      <h1>Search for a movie or tv series...</h1>
+      <nav className="navbar navbar-expand-lg navbar-light bg-dark mb-5">
+        <div className="navbar-header">
+          <Link className="navbar-brand text-white text-lg brand text" to="/">
+            Movies App
+          </Link>
+        </div>
+      </nav>
     </div>
   );
 };

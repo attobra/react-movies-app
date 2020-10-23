@@ -17,13 +17,14 @@ const Search = (props) => {
   return (
     <>
       <div className="container">
+        <h1>Search for a movie or tv series...</h1>
         <form onSubmit={handleSubmit}>
           <div class="form-group">
-            <label>Looking for a movie?</label>
+            <label>Are you looking for a movie or a TV series?</label>
             <input
               type="text"
               class="form-control"
-              placeholder="Search your movie here"
+              placeholder="Search your movie here..."
               value={searchValue}
               onChange={handleChange}
             />

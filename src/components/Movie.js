@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Movie = ({ movie }) => {
   return (
@@ -8,6 +9,11 @@ const Movie = ({ movie }) => {
         <h5 className="text-light card-title">
           {movie.Title} - {movie.Year}
         </h5>
+        <Link className="btn btn-primary" to={"/movie/" + movie.imdbID}>
+          Movie Details
+          {/* <i className="fas fa-chevron-right" />  */}
+        </Link>
+
         {/* <Link className="btn btn-primary" to={'/movie/'+ movie.imdbID}> */}
         {/* Movie Details
             <i className="fas fa-chevron-right" /> */}
